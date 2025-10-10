@@ -1,5 +1,20 @@
 # Prédiction du Churn - Télécom
+<div align="center">
+  <br />
+  <img src="https://www.simplon.ma/images/Simplon_Maghreb_Rouge.png" alt="Simplon Maghreb Logo" width="300"/>
+  <br /><br />
 
+  <div>
+    <img src="https://img.shields.io/badge/-Python-black?style=for-the-badge&logo=python&logoColor=white&color=3776AB" />
+    <img src="https://img.shields.io/badge/-Pandas-black?style=for-the-badge&logo=pandas&logoColor=white&color=150458" />
+    <img src="https://img.shields.io/badge/-NumPy-black?style=for-the-badge&logo=numpy&logoColor=white&color=013243" />
+    <img src="https://img.shields.io/badge/-Scikit--Learn-black?style=for-the-badge&logo=scikitlearn&logoColor=white&color=F7931E" />
+    <img src="https://img.shields.io/badge/-Matplotlib-black?style=for-the-badge&logo=plotly&logoColor=white&color=11557C" />
+    <img src="https://img.shields.io/badge/-Seaborn-black?style=for-the-badge&logoColor=white&color=4C9F70" />
+    <img src="https://img.shields.io/badge/-Jupyter-black?style=for-the-badge&logo=jupyter&logoColor=white&color=F37626" />
+    <img src="https://img.shields.io/badge/-Git-black?style=for-the-badge&logo=git&logoColor=white&color=F05032" />
+    <img src="https://img.shields.io/badge/-Jira-black?style=for-the-badge&logo=jira&logoColor=white&color=0052CC" />
+  </div>
 ## Contexte
 Projet de prédiction du **churn client** (désabonnement) pour une entreprise de télécommunications.  
 Objectif : identifier les clients à risque pour permettre des campagnes de fidélisation ciblées.
