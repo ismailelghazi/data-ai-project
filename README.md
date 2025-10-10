@@ -51,8 +51,6 @@ Après comparaison de plusieurs modèles, **deux modèles** ont été retenus po
    - modèles : LogisticRegression, RandomForest (optionnel), SVM.
 4. Évaluation (`pipeline.evaluate_models`)
    - métriques utilisées : Accuracy, Recall, F1-score, ROC-AUC, PR-AUC (optionnel).
-5. Sauvegarde des artefacts (`pipeline.save_all`)
-   - sauvegarde des modèles et du préprocesseur avec `joblib`.
 
 ---
 
