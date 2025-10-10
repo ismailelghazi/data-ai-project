@@ -87,9 +87,9 @@ pytest test_pipeline.py -v
 ---
 
 ## Où insérer les images
-<img src="images/model_comparison.png" alt="Girl in a jacket" width="500" height="900">
+<img src="images/model_comparison.png" alt="" width="1400" height="1000">
 
-<img src="images/eda_exampl.png" alt="Girl in a jacket" width="500" height="800">
+<img src="images/eda_exampl.png" alt="" width="1400" height="1000">
 
 
 ---
