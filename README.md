@@ -1,7 +1,7 @@
 # Prédiction du Churn - Télécom
 <div >
   <br />
-  <img src="https://www.simplon.ma/images/Simplon_Maghreb_Rouge.png" alt="Simplon Maghreb Logo" width="300"/>
+  <img   align-items: center  src="https://www.simplon.ma/images/Simplon_Maghreb_Rouge.png" alt="Simplon Maghreb Logo" width="300"/>
   <br /><br />
 
   <div>
