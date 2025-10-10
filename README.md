@@ -12,17 +12,9 @@ churn_project/
 ├── Data.csv
 ├── pipeline.py
 ├── test_pipeline.py
-├── notebook_EDA.ipynb
+├── eda_churn.ipynb
 ├── README.md
 ├── requirements.txt
-├── artifacts/
-│   ├── preprocessor.joblib
-│   ├── LogisticRegression.joblib
-│   └── SVM.joblib
-└── images/
-    ├── eda_example.png
-    ├── model_comparison.png
-    └── heatmap.png
 ```
 
 ---
@@ -75,7 +67,7 @@ Après comparaison de plusieurs modèles, **deux modèles** ont été retenus po
 ## Comment exécuter
 1. Cloner le dépôt :
 ```bash
-git clone https://github.com/votre-nom/churn_project.git
+git clone https://github.com/ismailelghazi/data-ai-project.git
 cd churn_project
 ```
 
@@ -101,7 +93,6 @@ Placez vos images (captures d'écran, graphiques) dans le dossier `images/` et u
 ```markdown
 ![EDA](images/eda_example.png)
 ![Comparaison modèles](images/model_comparison.png)
-![Heatmap](images/heatmap.png)
 ```
 
 ---
