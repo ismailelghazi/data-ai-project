@@ -88,7 +88,7 @@ pytest test_pipeline.py -v
 
 ## Où insérer les images
 Placez vos images (captures d'écran, graphiques) dans le dossier `images/` et utilisez ces liens dans le README ou le rapport :
-<img src"images/eda_example.png"></img>
+<img src="images/model_comparison.png" alt="Girl in a jacket" width="500" height="600">
 ```markdown
 ![Comparaison modèles](images/model_comparison.png)
 ```
