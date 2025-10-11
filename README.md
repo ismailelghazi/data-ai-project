@@ -15,8 +15,12 @@
     <img src="https://img.shields.io/badge/-Git-black?style=for-the-badge&logo=git&logoColor=white&color=F05032" />
     <img src="https://img.shields.io/badge/-Jira-black?style=for-the-badge&logo=jira&logoColor=white&color=0052CC" />
   </div>
-
 ---
+## Contexte
+Projet de prédiction du **churn client** (désabonnement) pour une entreprise de télécommunications.  
+Objectif : identifier les clients à risque pour permettre des campagnes de fidélisation ciblées.
+---
+
 
 ## Structure du dépôt
 ```
