@@ -1,20 +1,11 @@
 # Prédiction du Churn - Télécom
-<div style="perspective: 800px; display: flex; flex-direction: column; align-items: center;">
+<div align="center">
+  <img src="https://www.simplon.ma/images/Simplon_Maghreb_Rouge.png"
+       alt="Simplon Maghreb Logo"
+       width="300"
+       style="transform: rotateY(15deg) rotateX(5deg); box-shadow: 0 4px 20px rgba(0,0,0,0.3); border-radius: 10px;">
 
-  <!-- 3D floating logo -->
-  <div style="
-      transform-style: preserve-3d;
-      animation: rotate3D 6s infinite linear;
-      margin-bottom: 20px;
-    ">
-    <img src="https://www.simplon.ma/images/Simplon_Maghreb_Rouge.png"
-         alt="Simplon Maghreb Logo"
-         width="300"
-         style="border-radius: 10px; box-shadow: 0 0 20px rgba(0,0,0,0.3);">
-  </div>
-
-  <!-- tech badges -->
-  <div style="text-align:center;">
+  <div>
     <img src="https://img.shields.io/badge/-Python-black?style=for-the-badge&logo=python&logoColor=white&color=3776AB" />
     <img src="https://img.shields.io/badge/-Pandas-black?style=for-the-badge&logo=pandas&logoColor=white&color=150458" />
     <img src="https://img.shields.io/badge/-NumPy-black?style=for-the-badge&logo=numpy&logoColor=white&color=013243" />
@@ -25,16 +16,8 @@
     <img src="https://img.shields.io/badge/-Git-black?style=for-the-badge&logo=git&logoColor=white&color=F05032" />
     <img src="https://img.shields.io/badge/-Jira-black?style=for-the-badge&logo=jira&logoColor=white&color=0052CC" />
   </div>
-
 </div>
 
-<!-- rotation animation -->
-<style>
-@keyframes rotate3D {
-  from { transform: rotateY(0deg) rotateX(0deg); }
-  to { transform: rotateY(360deg) rotateX(10deg); }
-}
-</style>
 
 ---
 
