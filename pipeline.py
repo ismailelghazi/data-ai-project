@@ -39,6 +39,7 @@ def prepare_data(df, target='Churn'):
     cat_cols = X.select_dtypes(include=['object']).columns
 
     preproc = ColumnTransformer([
+       
         ('num', StandardScaler(), num_cols),
         ('cat', OneHotEncoder(handle_unknown='ignore'), cat_cols)
     ])
