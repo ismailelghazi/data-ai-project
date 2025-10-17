@@ -130,7 +130,7 @@ def evaluate_models(models, X_test, y_test):
     print(f"\nTotal misclassified: {len(errors)} out of {len(y_test)}")
 
 print("Loading data...")
-df = load_data('Data.csv')
+df = load_data('data.csv')
 print("Preparing data...")
 X_train, X_test, y_train, y_test, preproc = prepare_data(df)
 print("Training models...")
