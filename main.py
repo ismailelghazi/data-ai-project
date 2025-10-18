@@ -1,13 +1,16 @@
 import pandas as pd
 from model import train_model
 
-# Charger les données
-df = pd.read_csv("clean_data.csv")
+# Load data
+df = pd.read_csv("data.csv")
 
+# Separate features and target
 X = df.drop(columns=["Delivery_Time_min"])
 y = df["Delivery_Time_min"]
 
-# Entraîner avec GridSearch
+# Train models (RandomForest + SVR)
 model, r2, mae = train_model(X, y)
 
-print("\nEntraînement terminé avec succès !")
+print("\nTraining finished successfully!")
+print(f"Best R2: {r2:.3f}")
+print(f"Best MAE: {mae:.3f}")
