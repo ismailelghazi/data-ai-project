@@ -50,22 +50,6 @@ Conclusion : Random Forest est retenu (MAE plus faible, R² plus élevé). Avant
 - Expliquer les prédictions (SHAP) pour la transparence métier  
 - Versionner les modèles & hyperparamètres et planifier des ré-entraînements (ou sur drift)
 
-## Fichiers et structure recommandée / Suggested repo layout
-- README.md  
-- requirements.txt  
-- src/
-  - data_processing.py
-  - features.py
-  - train.py
-  - predict.py
-- notebooks/ (EDA + expérimentations)
-- tests/
-  - test_data.py
-  - test_model.py
-- models/
-  - best_pipeline.joblib
-- .github/workflows/python-tests.yml
-
 ## Commandes utiles / Useful commands
 Installation
 ```bash
