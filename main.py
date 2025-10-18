@@ -2,7 +2,7 @@ import pandas as pd
 from model import train_model
 
 # Load data
-df = pd.read_csv("data.csv")
+df = pd.read_csv("clean_data.csv")
 
 # Separate features and target
 X = df.drop(columns=["Delivery_Time_min"])
