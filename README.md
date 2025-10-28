@@ -144,7 +144,7 @@ This project is open source and available under the MIT License.
 ## 👤 Author
 
 **Khadija**
-- GitHub: [@khadija199904](https://github.com/ismailelghazi)
+- GitHub: [@ismailelghazi](https://github.com/ismailelghazi)
 
 ## 🙏 Acknowledgments
 
