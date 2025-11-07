@@ -11,13 +11,13 @@ url = "https://raw.githubusercontent.com/opencv/opencv/master/data/haarcascades/
 output_path = "models/haarcascade_frontalface_default.xml"
 
 # Télécharger
-print("📥 Téléchargement de Haar Cascade...")
+print("Téléchargement de Haar Cascade...")
 urllib.request.urlretrieve(url, output_path)
-print(f"✅ Fichier téléchargé: {output_path}")
+print(f"Fichier téléchargé: {output_path}")
 
 # Vérifier
 if os.path.exists(output_path):
     file_size = os.path.getsize(output_path)
-    print(f"✅ Taille du fichier: {file_size} bytes")
+    print(f"Taille du fichier: {file_size} bytes")
 else:
-    print("❌ Erreur lors du téléchargement")
+    print("Erreur lors du téléchargement")
