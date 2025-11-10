@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from core.database import engine, Base
-from routes.prediction import router
+from routes.prediction import router as prediction_router
 
 # Créer les tables
 Base.metadata.create_all(bind=engine)
@@ -9,6 +9,7 @@ Base.metadata.create_all(bind=engine)
 app = FastAPI(
     title="Emotion Detection API",
     description="API de détection d'émotions faciales",
+    version="1.0.0"
 )
 
 # Configuration CORS
@@ -21,7 +22,7 @@ app.add_middleware(
 )
 
 # Inclure les routes
-app.include_router(router, prefix="/api", tags=["Predictions"])
+app.include_router(prediction_router, prefix="/api", tags=["Predictions"])
 
 @app.get("/")
 def read_root():
@@ -34,5 +35,3 @@ def read_root():
 @app.get("/health")
 def health_check():
     return {"status": "healthy"}
-
-# Lancer l'API avec: uvicorn api.main:app --reload

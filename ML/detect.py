@@ -66,5 +66,5 @@ def detect_emotion(image_path):
     cv2.destroyAllWindows()
 
 # Test
-image_path = r''
+image_path = r'c:\Users\DELL\Pictures\Camera Roll\WIN_20251110_09_31_34_Pro.jpg'
 detect_emotion(image_path)
