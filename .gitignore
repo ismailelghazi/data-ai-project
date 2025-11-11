@@ -1,18 +1,25 @@
+# Ignorer le dossier du modèle
+emotion-detection-fer/
+
 # IDE settings
 .idea/
 .vscode/
+
 # Python settings
 __pycache__/
 *.py[cod]
 *$py.class
+
 # Jupyter Notebook settings
-.ipynb_checkpoints  
+.ipynb_checkpoints/
+
 # Environment settings
-.env/
+.env
 venv/
-*.
-*.xmllock
+
 # OS generated files
 .DS_Store
 Thumbs.db
-.idea
+
+# Autres fichiers inutiles
+*.xmllock

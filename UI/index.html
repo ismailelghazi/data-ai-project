@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotion Detection App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Emotion Detection</h1>
+            <p>Upload a photo and let AI detect the emotion</p>
+        </header>
+
+        <main>
+            <!-- Upload Section -->
+            <div class="upload-section">
+                <div class="upload-box" id="uploadBox">
+                    <input type="file" id="fileInput" accept="image/*" hidden>
+                    <div class="upload-content">
+                        <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                            <polyline points="17 8 12 3 7 8"></polyline>
+                            <line x1="12" y1="3" x2="12" y2="15"></line>
+                        </svg>
+                        <h3>Click to upload image</h3>
+                        <p>or drag and drop here</p>
+                    </div>
+                </div>
+
+                <!-- Preview Image -->
+                <div class="preview-section" id="previewSection" style="display: none;">
+                    <img id="previewImage" src="" alt="Preview">
+                    <button class="btn-secondary" id="changeImageBtn">Change Image</button>
+                </div>
+
+                <button class="btn-primary" id="analyzeBtn" disabled>Analyze Emotion</button>
+            </div>
+
+            <!-- Result Section -->
+            <div class="result-section" id="resultSection" style="display: none;">
+                <h2>Result</h2>
+                <div class="emotion-result">
+                    <div class="emotion-icon" id="emotionIcon">😊</div>
+                    <div class="emotion-details">
+                        <h3 id="emotionName">Happy</h3>
+                        <div class="confidence-bar">
+                            <div class="confidence-fill" id="confidenceFill"></div>
+                        </div>
+                        <p id="confidenceText">Confidence: 0%</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Loading Spinner -->
+            <div class="loading" id="loading" style="display: none;">
+                <div class="spinner"></div>
+                <p>Analyzing emotion...</p>
+            </div>
+
+            <!-- Error Message -->
+            <div class="error" id="error" style="display: none;">
+                <p id="errorMessage"></p>
+            </div>
+
+            <!-- History Section -->
+            <div class="history-section">
+                <h2>Recent Predictions</h2>
+                <button class="btn-secondary" id="loadHistoryBtn">Load History</button>
+                <div class="history-list" id="historyList"></div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Made with ❤️ using Python and AI</p>
+        </footer>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

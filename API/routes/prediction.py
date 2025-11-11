@@ -13,7 +13,7 @@ from schemas.prediction import PredictionResponse, HistoryResponse
 router = APIRouter()
 
 # --- Paths to ML files ---
-ML_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), '..', 'ML')
+ML_DIR = os.path.join(os.path.dirname(os.path.dirname(os.path.abspath(__file__))), '.', 'ML')
 MODEL_PATH = os.path.join(ML_DIR, 'models', 'emotion_model.h5')
 CASCADE_PATH = os.path.join(ML_DIR, 'models', 'haarcascade_frontalface_default.xml')
 EMOTIONS_PATH = os.path.join(ML_DIR, 'models', 'emotions.json')

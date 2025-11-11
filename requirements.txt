@@ -1,0 +1,21 @@
+# Core ML Dependencies
+tensorflow
+keras
+opencv-python
+numpy
+h5py
+
+# API Framework
+fastapi
+uvicorn
+python-multipart
+
+# Database
+sqlalchemy
+psycopg2-binary
+
+# Configuration
+python-dotenv
+
+# Additional utilities
+requests
