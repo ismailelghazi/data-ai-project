@@ -20,7 +20,9 @@ ENV/
 *.swo
 
 # Dataset (too large for container)
-ML/emotion-detection-fer/
+# Ignore training & testing datasets
+API/ML/emotion-detection-fer/versions/1/train/
+API/ML/emotion-detection-fer/versions/1/test/
 
 # Jupyter
 .ipynb_checkpoints/

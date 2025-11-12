@@ -10,9 +10,9 @@ load_dotenv()
 # Get environment variables
 DB_USER = os.getenv("POSTGRES_USER", "")
 DB_PASS = quote_plus(os.getenv("POSTGRES_PASSWORD", ""))  # Encode special chars
-DB_HOST = os.getenv("POSTGRES_SERVER", "localhost")
+DB_HOST = os.getenv("POSTGRES_SERVER", "db")  # <-- Important: use 'db' here
 DB_PORT = os.getenv("POSTGRES_PORT", "5432")
-DB_NAME = os.getenv("POSTGRES_DB", "")
+DB_NAME = os.getenv("POSTGRES_DB", "postgres")
 
 # Build database URL
 DATABASE_URL = f"postgresql+psycopg2://{DB_USER}:{DB_PASS}@{DB_HOST}:{DB_PORT}/{DB_NAME}"
@@ -22,7 +22,7 @@ engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(bind=engine, autoflush=False, autocommit=False)
 Base = declarative_base()
 
-# Database dependency (for FastAPI)
+# Dependency for FastAPI
 def get_db():
     db = SessionLocal()
     try:
@@ -30,11 +30,10 @@ def get_db():
     finally:
         db.close()
 
-# Test database connection
+# Test DB connection
 if __name__ == "__main__":
     print("Testing database connection...")
     print(f"DB: {DB_NAME} | User: {DB_USER} | Host: {DB_HOST}:{DB_PORT}")
-
     try:
         with engine.connect() as conn:
             conn.execute(text("SELECT 1"))
