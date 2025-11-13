@@ -12,14 +12,14 @@ app = FastAPI(
     version="1.0.0"
 )
 
-# Configuration CORS
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],  # À ajuster en production
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
+# # Configuration CORS
+# app.add_middleware(
+#     CORSMiddleware,
+#     allow_origins=["*"],  # À ajuster en production
+#     allow_credentials=True,
+#     allow_methods=["*"],
+#     allow_headers=["*"],
+#  )
 
 # Inclure les routes
 app.include_router(prediction_router, prefix="/api", tags=["Predictions"])
