@@ -150,17 +150,16 @@ python detect.py path/to/your/image.jpg
 
 ```
 emotion-detection/
-├── ML/                    # Machine Learning code
-│   ├── detect.py          # Script to detect emotions
-│   ├── emotion.ipynb      # Notebook to train the model
-│   └── models/            # Trained AI models
-│
 ├── API/                   # Web API
 │   ├── main.py           # API startup
 │   ├── routes/           # API endpoints (uses ML model)
 │   ├── core/             # Database setup
 │   ├── models/           # Database models
 │   └── schemas/          # Data structures
+    ML/                    # Machine Learning code
+│   ├── detect.py          # Script to detect emotions
+│   ├── emotion.ipynb      # Notebook to train the model
+│   └── models/            # Trained AI models
 │
 ├── UI/                    # Web Interface
 │   ├── index.html        # Main page
