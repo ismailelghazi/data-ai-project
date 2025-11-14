@@ -2,7 +2,7 @@
 
 A simple app that detects emotions from face images using AI.
 
-## What does it do?
+## What does it do ?
 
 This project can look at a photo of someone's face and tell you what emotion they're feeling (happy, sad, angry, etc.).
 
