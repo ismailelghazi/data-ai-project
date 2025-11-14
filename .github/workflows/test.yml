@@ -2,7 +2,7 @@ name: ML Unit Tests
 
 on: 
   push:
-    branches: [ API+ML ]     # Only triggers on this branch
+    branches: [API+ML]     # Only triggers on this branch
 
 jobs:
   test:
