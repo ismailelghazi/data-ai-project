@@ -2,6 +2,8 @@ import os
 import numpy as np
 import tensorflow as tf
 import pytest
+import tempfile
+import shutil
 
 
 @pytest.fixture
@@ -17,20 +19,30 @@ def dummy_model():
     return model
 
 
-def test_save_and_load_model(dummy_model):
+@pytest.fixture
+def temp_model_dir():
+    """Create a temporary directory for model testing."""
+    temp_dir = tempfile.mkdtemp()
+    yield temp_dir
+    # Cleanup after test
+    if os.path.exists(temp_dir):
+        shutil.rmtree(temp_dir)
+
+
+def test_save_and_load_model(dummy_model, temp_model_dir):
     """Ensure model saves and loads correctly."""
-    path = "ML/models/test_emotion_model.h5"
+    path = os.path.join(temp_model_dir, "test_emotion_model.h5")
 
-    # Create directory if it doesn't exist
-    os.makedirs(os.path.dirname(path), exist_ok=True)
-
+    # Save the model
     dummy_model.save(path)
     assert os.path.exists(path), "Model file not created"
 
+    # Load the model
     loaded = tf.keras.models.load_model(path)
     assert loaded is not None, "Model failed to load"
 
-    os.remove(path)
+    # Verify model structure
+    assert len(loaded.layers) == len(dummy_model.layers), "Model structure mismatch"
 
 
 def test_prediction_format(dummy_model):
