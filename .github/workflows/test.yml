@@ -3,7 +3,6 @@ name: ML Unit Tests
 on:
   push:
     branches: [ "API+ML" ]   # Run only on API+ML branch
-  workflow_dispatch:          # Allow manual run from GitHub UI
 
 jobs:
   test:
