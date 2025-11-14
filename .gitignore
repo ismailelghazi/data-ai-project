@@ -1,25 +1,37 @@
-# Ignorer le dossier du modèle
-emotion-detection-fer/
+# Default ignored files
+/shelf/
+/workspace.xml
 
-# IDE settings
-.idea/
-.vscode/
-
-# Python settings
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
-
-# Jupyter Notebook settings
-.ipynb_checkpoints/
-
-# Environment settings
-.env
+*.so
+.Python
 venv/
+env/
+ENV/
 
-# OS generated files
+# IDE
+.idea/
+.vscode/
+
+# Environment variables
+.env
+.env.local
+
+# Model files (too large for git)
+*.h5
+*.keras
+
+# Dataset (too large for git)
+API/ML/emotion-detection-fer/
+
+# Test artifacts
+.pytest_cache/
+ML/models/test_*.h5
+
+# OS
 .DS_Store
 Thumbs.db
-
-# Autres fichiers inutiles
-*.xmllock
+nul

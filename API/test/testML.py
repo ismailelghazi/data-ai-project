@@ -19,7 +19,10 @@ def dummy_model():
 
 def test_save_and_load_model(dummy_model):
     """Ensure model saves and loads correctly."""
-    path = ".ML\models\emotion_model.h5"
+    path = "ML/models/test_emotion_model.h5"
+
+    # Create directory if it doesn't exist
+    os.makedirs(os.path.dirname(path), exist_ok=True)
 
     dummy_model.save(path)
     assert os.path.exists(path), "Model file not created"
