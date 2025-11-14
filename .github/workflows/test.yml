@@ -2,9 +2,9 @@ name: ML Unit Tests
 
 on:
   push:
-    branches: [ API+ML]
+    branches: [ "API+ML" ]
   pull_request:
-    branches: [ API+ML]
+    branches: [ "API+ML" ]
   workflow_dispatch:  # Allow manual trigger
 
 jobs:
@@ -36,7 +36,7 @@ jobs:
 
     - name: Tests completed
       if: success()
-      run: echo "✅ All tests passed successfully!"
+      run: echo "All tests passed successfully!"
 
     - name: Tests failed
       if: failure()
