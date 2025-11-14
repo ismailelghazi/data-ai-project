@@ -2,8 +2,8 @@ name: ML Unit Tests
 
 on:
   push:
-    branches: [ "API+ML" ]
-  
+    branches: [ "API+ML" ]   # Run only on API+ML branch
+  workflow_dispatch:          # Allow manual run from GitHub UI
 
 jobs:
   test:
@@ -17,9 +17,9 @@ jobs:
     - name: Set up Python 3.11
       uses: actions/setup-python@v5
       with:
-        python-version: '3.11'
-        cache: 'pip'
-        cache-dependency-path: 'API/requirements.txt'
+        python-version: "3.11"
+        cache: "pip"
+        cache-dependency-path: "API/requirements.txt"
 
     - name: Install dependencies
       working-directory: ./API
