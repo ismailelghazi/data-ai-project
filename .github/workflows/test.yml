@@ -3,9 +3,7 @@ name: ML Unit Tests
 on:
   push:
     branches: [ "API+ML" ]
-  pull_request:
-    branches: [ "API+ML" ]
-  workflow_dispatch:  # Allow manual trigger
+  
 
 jobs:
   test:
