@@ -35,7 +35,7 @@ jobs:
 
     - name: Tests completed
       if: success()
-      run: echo "All tests passed successfullyw!"
+      run: echo "✅ All tests passed successfully!"
 
     - name: Tests failed
       if: failure()
