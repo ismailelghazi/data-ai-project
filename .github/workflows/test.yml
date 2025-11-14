@@ -2,9 +2,9 @@ name: ML Unit Tests
 
 on:
   push:
-    branches: [ master, develop, API+ML]
+    branches: [ API+ML]
   pull_request:
-    branches: [ master, develop ]
+    branches: [ API+ML]
   workflow_dispatch:  # Allow manual trigger
 
 jobs:
