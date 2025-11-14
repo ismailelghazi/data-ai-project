@@ -246,5 +246,3 @@ Check the `/docs` page when the API is running - it has examples and lets you te
 The API saves predictions in a PostgreSQL database so you can see your history. When using Docker, the database is automatically set up and configured. For manual setup, you need to install PostgreSQL and configure the connection in your `.env` file.
 
 ---
-
-Made with ❤️ using Python and AI

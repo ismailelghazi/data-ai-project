@@ -1,6 +1,9 @@
 name: ML Unit Tests
 
-on: [push] # Run only on API+ML branch
+on: 
+  push:
+    branches:
+      - "API+ML"       # Only triggers on this branch
 
 jobs:
   test:
